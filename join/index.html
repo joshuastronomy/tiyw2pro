@@ -25,61 +25,69 @@
     calendar highlighted day: #F5005B
     button background: #F5005B
     copyright text: #FFFFFF -->
-    <div class="navbar" id="top-menu">
-      <img src="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/images/filmclub.png" id="nav-icon" />
-      <div class="nav-menu">
-        <a class="nav-item"
-         href="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/index.html"><p>Home</p>
-        </a>
-        <a class="nav-item" href="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/calendar/index.html"><p>Calendar</p>
-        </a>
-        <a class="nav-item" href="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/join/index.html"><p>Join</p>
-        </a>
-        <div class="empty-bar">
+  <div class="navbar" id="top-menu">
+    <img src="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/images/filmclub.png" id="nav-icon" />
+    <div class="nav-menu">
+      <a class="nav-item" href="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/index.html">
+        <p>Home</p>
+      </a>
+      <a class="nav-item" href="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/calendar/index.html">
+        <p>Calendar</p>
+      </a>
+      <a class="nav-item" href="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/join/index.html">
+        <p>Join</p>
+      </a>
+      <div class="empty-bar">
 
-        </div>
       </div>
     </div>
-  <header>
+  </div>
+  <header class="join-header">
     Join Film Club
   </header>
 
   <form action="foo.bar" method="POST" id="form">
-    <div class="pro-wrap"><div class="pro-item"><input type="file" name="profilepic" />
-    <img src="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/images/profile-placeholder.png" alt="Placeholder Profile Pic" id="placeholder" /></div>
-    <div class="pro-item" id="pro-text"><div class="text-wrap"><label for="name">name</label>
-    <input type="text" id="name" name="name" /><br>
-    <label for="email">email</label>
-    <input type="email" id="email" name="email" /><br></div>
-<div class="text-wrap">    <label for="pwd">password</label>
-    <input type="password" id="pwd" name="pwd" /><br>
-    <label for="confirm">confirm password</label>
-    <input type="password" id="confirm" name="confirm" /><br></div></div></div>
+    <div class="pro-wrap">
+      <div class="pro-item"><input type="file" name="profilepic" />
+        <img src="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/images/profile-placeholder.png" alt="Placeholder Profile Pic" id="placeholder" /></div>
+      <div class="pro-item" id="pro-text">
+        <div class="text-wrap"><label for="name">name</label>
+          <input type="text" id="name" name="name" /><br>
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" /><br></div>
+        <div class="text-wrap"> <label for="pwd">password</label>
+          <input type="password" id="pwd" name="pwd" /><br>
+          <label for="confirm">confirm password</label>
+          <input type="password" id="confirm" name="confirm" /><br></div>
+      </div>
+    </div>
 
     <p>What genres are you interested in?</p>
-    <div class="check-wrap"><div class="check">
-      <input type="checkbox" name="genre" value="action">action
+    <div class="check-wrap">
+      <div class="check">
+        <input type="checkbox" name="genre" value="action" id="action"><label for="action">action</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="adventure" id="adventure"><label for="adventure">adventure</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="comedy" id="comedy"><label for="comedy">comedy</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="drama" id="drama"><label for="drama">drama</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="fantasy" id="fantasy"><label for="fantasy">fantasy</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="historical" id="historical"><label for="historical">historical</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="horror" id="horror"><label for="horror">horror</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="mystery" id="mystery"><label for="mystery">mystery</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="romance" id="romance"><label for="romance">romance</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="science fiction" id="sciencefiction"><label for="sciencefiction">science fiction</label>
+      </div>
+      <div class="check"><input type="checkbox" name="genre" value="western" id="western"><label for="western">western</label>
+      </div>
     </div>
-    <div class="check"><input type="checkbox" name="genre" value="adventure">adventure
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="comedy">comedy
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="drama">drama
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="fantasy">fantasy
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="historical">historical
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="horror">horror
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="mystery">mystery
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="romance">romance
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="science fiction">science fiction
-    </div>
-    <div class="check"><input type="checkbox" name="genre" value="western">western
-    </div></div>
     <p>Additional input</p>
     <textarea name="additional" form="form"></textarea>
 
@@ -105,9 +113,11 @@
       <a class="nav-item" href="/Users/joshuastronomy/Documents/TIY/week2/tiyw2pro/join/index.html">
         <p>Join</p>
       </a>
-      <div class="copy"><p>&copy 2017, Film Club</p>
+      <div class="copy">
+        <p>&copy 2017, Film Club</p>
       </div>
     </div>
   </div>
 </div>
+
 </html>

@@ -7,6 +7,14 @@ ul {
   padding: 0 20px;
 }
 
+a {
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
 body>header {
   font-size: 2.2em;
   color: #0B1942;
@@ -158,7 +166,7 @@ body>header {
   font-size: .9em;
 }
 
-.grid-item p  {
+.grid-item p {
   margin: 0;
   margin-left: 10px;
 }
@@ -238,6 +246,11 @@ body>header {
   background-color: #F5005B;
 }
 
+.join-header {
+  font-size: 8vw;
+  padding: 20px;
+}
+
 form {
   display: flex;
   flex-flow: column nowrap;
@@ -249,6 +262,10 @@ input[type="text"], input[type="email"], input[type="password"] {
   height: 25px;
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
 textarea {
   height: 50px;
   margin: 10px;
@@ -256,6 +273,11 @@ textarea {
 
 .check {
   margin: 10px 5px;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 button {
@@ -268,6 +290,8 @@ button {
   border: none;
   color: white;
   background-color: #F5005B;
+  margin: 10px;
+  margin-bottom: 20px;
 }
 
 #placeholder {
@@ -310,202 +334,160 @@ button {
   margin: 0;
 }
 
+
 /*TABLET BREAKPOINT -- 545px*/
-@media screen and (min-width: 545px){
 
-.nav-menu {
-  display: flex;
-  flex-flow: row nowrap;
-  text-align: center;
-  width: 100%;
+@media screen and (min-width: 545px) {
+  .nav-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    width: 100%;
+  }
+  #nav-icon {
+    width: 10%;
+    height: 10%;
+    padding: 20px;
+    background-color: #F5005B;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.3%;
+    width: 100%;
+    background-color: #00A5BF;
+    font-size: 2.2vw;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+  }
+  .nav-item p {
+    margin: 0;
+  }
+  .nav-menu :nth-child(2) {
+    background-color: #00B7D3;
+  }
+  .nav-menu :nth-child(3) {
+    background-color: #00D5E7;
+  }
+  .empty-bar {
+    flex-basis: 100%;
+    background-color: #7DDFE8;
+  }
+  .part-1-body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .sec-wrap {
+    flex-grow: 1;
+    flex-basis: 30%;
+    padding: 20px;
+  }
+  .section-subhead {
+    font-size: 2.7vh;
+  }
+  .spotlight {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .spot-section {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  .next-grid {
+    flex-flow: row nowrap;
+  }
+  .grid-item a {
+    font-size: 2vw;
+  }
+  .c-header {
+    padding: 20px;
+  }
+  .join-header {
+    font-size: 4vw;
+    padding: 20px;
+  }
+  #placeholder {
+    width: 100%;
+    height: auto;
+  }
+  .pro-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  .pro-item {
+    flex-basis: 50%;
+    line-height: 2;
+  }
+  #pro-text {
+    padding-left: 20px;
+  }
+  .text-wrap {
+    padding-bottom: 50px;
+  }
+  .check-wrap {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .check {
+    flex-basis: 30%;
+  }
+  #bot-menu .nav-menu {
+    height: 13vh;
+  }
+  #bot-menu .copy {
+    font-size: 2.2vw;
+    justify-content: flex-end;
+    flex-basis: 100%;
+  }
+  #bot-menu .copy p {
+    padding-right: 30px;
+  }
 }
-
-#nav-icon {
-  width: 10%;
-  height: 10%;
-  padding: 20px;
-  background-color: #F5005B;
-}
-
-
-.nav-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 33.3%;
-  width: 100%;
-  background-color: #00A5BF;
-  font-size: 2.2vw;
-  position: relative;
-  text-decoration: none;
-  color: white;
-  vertical-align: middle;
-}
-
-.nav-item p {
-  margin: 0;
-}
-
-.nav-menu :nth-child(2) {
-  background-color: #00B7D3;
-}
-
-.nav-menu :nth-child(3) {
-  background-color: #00D5E7;
-}
-
-.empty-bar  {
-  flex-basis: 100%;
-  background-color: #7DDFE8;
-}
-
-.part-1-body {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.sec-wrap {
-  flex-grow: 1;
-  flex-basis: 30%;
-  padding: 20px;
-}
-
-.section-subhead  {
-  font-size: 2.7vh;
-}
-
-.spotlight  {
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.spot-section {
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-}
-
-.next-grid  {
-  flex-flow: row nowrap;
-}
-
-.grid-item a {
-  font-size: 2vw;
-}
-
-.c-header  {
-  padding: 20px;
-}
-
-#placeholder  {
-  width: 100%;
-  height: auto;
-}
-
-.pro-wrap  {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-
-.pro-item {
-  flex-basis: 50%;
-  line-height: 2;
-}
-
-#pro-text {
-  padding-left: 20px;
-}
-
-.text-wrap  {
-  padding-bottom: 50px;
-}
-
-
-.check-wrap{
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.check  {
-  flex-basis: 30%;
-}
-
-
-#bot-menu .nav-menu {
-  height: 13vh;
-}
-
-#bot-menu .copy {
-  font-size: 2.2vw;
-  justify-content: flex-end;
-  flex-basis: 100%;
-}
-
-#bot-menu .copy p  {
-  padding-right: 30px;
-}
-
-}
-
 
 
 /*DESKTOP BREAKPOINT -- 769px*/
 
-@media screen and (min-width: 769px){
-
-
-.section-subhead p  {
-  margin: 10px 0;
-}
-
+@media screen and (min-width: 769px) {
+  .section-subhead p {
+    margin: 10px 0;
+  }
   .part-2-wrap {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
-    padding:0 20px 20px 20px;
-}
-
-.spotlight {
-  flex-basis: 45%;
-}
-
-.spot-section {
-  font-size: 1.5vw;
-}
-
-.next-grid  {
-  flex-basis: 45%;
-  flex-flow: row wrap;
-  margin: 0;
-}
-
-.grid-item  {
-  flex-basis: 50%;
-}
-
-#pro-text {
-  flex-basis: 120%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.text-wrap  {
-  flex-basis: 45%;
-  margin: 0 10px;
-}
-
-
-
-  .check  {
+    padding: 0 20px 20px 20px;
+  }
+  .spotlight {
     flex-basis: 45%;
   }
-
-
-
-
-
-
+  .spot-section {
+    font-size: 1.5vw;
+  }
+  .next-grid {
+    flex-basis: 45%;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+  .grid-item {
+    flex-basis: 50%;
+  }
+  #pro-text {
+    flex-basis: 120%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .text-wrap {
+    flex-basis: 45%;
+    margin: 0 10px;
+  }
+  .check {
+    flex-basis: 45%;
+  }
 }
